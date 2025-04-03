@@ -92,8 +92,9 @@ body {
     grid-row: 2;
 }
 .filters a {
+    white-space: nowrap;
     height: 40px;
-    display: flex;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
