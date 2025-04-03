@@ -73,14 +73,14 @@ body {
     .search {
         display: flex;
         width: 75%;
-        height: 40%;
+        height: 35%;
         background-color: white;
         border: 2px solid rgb(227, 227, 227);
         border-radius: 8px;
         align-items: center;
         i {
             font-size: 1.2em;
-            color: rgb(173, 173, 173);
+            color: rgb(122, 122, 122);
             margin-bottom: 2px;
             margin-left: 5px;
             margin-right: 5px;
@@ -90,17 +90,27 @@ body {
 .filters {
     display: flex;
     grid-row: 2;
-    div {
-        height: 40px;
-        border: 1px solid rgb(0, 0, 0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgb(0, 0, 0);
-        margin-left: 5%;
-        margin-right: 5%;
-        border-radius: 10px;
-    }
+}
+.filters a {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+.filters a:hover {
+    transition: 0.1s ease;
+    background-color: rgb(173, 173, 173);
+    color: white;
+}
+.filters a:focus {
+    background-color: rgb(29, 29, 29);
+    color: white;
 }
 .cards {
     display: grid;
@@ -131,7 +141,7 @@ body {
     }
 }
 .products:hover {
-    transition: transform 0.2s ease;
+    transition: 0.2s ease;
     transform: scale(1.05);
 }
 .nav {
@@ -147,24 +157,17 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    #home-icon {
+    .nav-icons {
         background-color: rgb(52, 52, 52);
         border-radius: 50px;
+        color: white    ;
         padding: 5px;
+        text-decoration: none;
     }
-    #bag-icon {
-        background-color: rgb(52, 52, 52);
-        border-radius: 50px;
-        padding: 5px;
+    .nav-icons:hover {
+        background-color: rgb(97, 97, 97);
     }
-    #heart-icon {
-        background-color: rgb(52, 52, 52);
-        border-radius: 50px;
-        padding: 5px;
-    }
-    #person-icon {
-        background-color: rgb(52, 52, 52);
-        border-radius: 50px;
-        padding: 5px;
+    .nav-icons:focus {
+        background-color: rgb(131, 131, 131);
     }
 }
