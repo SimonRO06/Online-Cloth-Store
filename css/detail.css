@@ -7,43 +7,90 @@
 }
 body {
     display: grid;
-    grid-template-rows: 55vh 22vh 10vh 10vh;
+    grid-template-rows: 58vh 16vh 16vh 7vh;
     height: 100%;
     width: 95%;
 }
 .product {
     grid-row: 1;
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
+    back-a {
+        position: absolute;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50px;
+    }
     img {
-        width: 85%;
+        width: 95%;
         height: 100%;
         border-radius: 20px;
     }
 }
 .info {
     grid-row: 2;
-    background-color: blueviolet;
-    padding: 0 5%;
+    padding: 0;
     #title {
         display: flex;
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-bottom: 10px;
+        margin-right: 0;
+    }
+    #rate {
+        margin: 0;
+        font-size: 10px;
+        color: grey;
     }
     i {
         color: rgb(255, 238, 0);
-        margin-right: 5%;
+        margin-right: 2%;
+        font-size: 10px;
+    }
+    .product-text {
+        display: flex;
+        align-items: center;
+    }
+    #text {
+        color: grey;
+        font-size: 0.8em;
+    }
+    #reviews-a {
+        text-decoration: none;
+        font-size: 10px;
+    }
+    #read-more-a {
+        text-decoration: none;
+        font-size: 14px;
     }
 }
 .size {
     grid-row: 3;
-    background-color: lightcoral;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    a {
+        border: 2px solid grey;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        border-radius: 50px;
+        padding: 10px 12px;
+    }
+    a:nth-child(4) {
+        padding: 10px 10px;
+    }
+    a:hover {
+        background-color: rgb(165, 165, 165);
+    }
+    a:focus {
+        border: 2px solid black;
+        color: white;
+        background-color: black;
+    }
+    .size-a {
+        grid-column: 1;
+    }
 }
 .cart {
     grid-row: 4;
-    background-color: lightgreen;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +100,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
         width: 90%;
         color: white;
         padding: 15px;
@@ -104,30 +152,42 @@ body {
         padding: 0 5%;
         #title {
             display: flex;
-            font-size: 5em;
+            font-size: 3em;
             margin-bottom: 10px;
+            border-radius: 50px;
+            padding: 20px;
+            color: white;
+            background-color: black;
         }
         i {
             color: rgb(255, 238, 0);
             margin-right: 20px;
+            font-size: 2em;
+        }
+        #rate {
+            font-size: 30px;
         }
         .product-text {
             display: flex;
             align-items: center;
-            font-size: 30px;
+            font-size: 15px;
         }
         #text {
             color: grey;
             font-size: 40px;
         }
-        a {
+        #reviews-a {
             text-decoration: none;
+            font-size: 30px;
+        }
+        #read-more-a {
+            text-decoration: none;
+            font-size: 30px;
         }
     }
     .size {
         grid-column: 2;
         grid-row: 2;
-        background-color: lightcoral;
     }
     .cart {
         grid-column: 2;
