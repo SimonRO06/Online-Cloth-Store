@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body {
+    display: grid;
+    grid-template-rows: 55vh 22vh 10vh 10vh;
+    height: 100%;
+    width: 95%;
+}
+.product {
+    grid-row: 1;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 85%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
+.info {
+    grid-row: 2;
+    background-color: blueviolet;
+    padding: 0 5%;
+    #title {
+        display: flex;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    i {
+        color: rgb(255, 238, 0);
+        margin-right: 5%;
+    }
+}
+.size {
+    grid-row: 3;
+    background-color: lightcoral;
+}
+.cart {
+    grid-row: 4;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-size: 1.2rem;
+        background-color: rgb(19, 19, 19);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        color: white;
+        padding: 15px;
+        border-radius: 50px;
+        margin-right: 10px;
+        i {
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+    }
+    p:hover {
+        transition: background-color 0.15s ease-in-out;
+        background-color: rgb(83, 83, 83);
+    }
+    p:active {
+        transform: scale(0.9);
+        transition: 0.07s ease;
+    }
+    sub {
+        font-size: 10px;
+        margin-left: 5px;
+        color: rgb(151, 151, 151);
+        text-decoration: line-through;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 47.9vh 40vh 10vh;
+        height: 100%;
+        width: 98.5%;
+    }
+    .product {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 85%;
+            height: 100%;
+            border-radius: 20px;
+        }
+    }
+    .info {
+        grid-column: 2;
+        grid-row: 1;
+        padding: 0 5%;
+        #title {
+            display: flex;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        i {
+            color: rgb(255, 238, 0);
+            margin-right: 5%;
+        }
+    }
+    .size {
+        grid-column: 2;
+        grid-row: 2;
+        background-color: lightcoral;
+    }
+    .cart {
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
