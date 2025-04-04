@@ -9,7 +9,7 @@
 }
 body {
     display: grid;
-    grid-template-rows: 0.17fr 0.05fr 0.62fr;
+    grid-template-rows: 13% 5% 63%;
     height: 100%;
     width: 100%;
 }
@@ -286,7 +286,7 @@ body {
         transform: translateX(-50%);
         padding: 10px;
         background-color: rgb(29, 29, 29);
-        width: 50%;
+        width: 30%;
         border-radius: 50px;
         color: white;
         margin-bottom: 10px;
@@ -305,5 +305,10 @@ body {
         grid-template-rows: 0.17fr 0.09fr 0.8fr;
         height: 100%;
         width: 100%;
+    }
+    img {
+        align-content: center;
+        width: 100%;
+        border-radius: 20px;
     }
 }

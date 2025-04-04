@@ -82,7 +82,7 @@ body {
     body {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 47.9vh 40vh 10vh;
+        grid-template-rows: 60vh 19vh 19vh;
         height: 100%;
         width: 98.5%;
     }
@@ -104,12 +104,24 @@ body {
         padding: 0 5%;
         #title {
             display: flex;
-            font-size: 2.5em;
+            font-size: 5em;
             margin-bottom: 10px;
         }
         i {
             color: rgb(255, 238, 0);
-            margin-right: 5%;
+            margin-right: 20px;
+        }
+        .product-text {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+        }
+        #text {
+            color: grey;
+            font-size: 40px;
+        }
+        a {
+            text-decoration: none;
         }
     }
     .size {
@@ -120,5 +132,9 @@ body {
     .cart {
         grid-column: 2;
         grid-row: 3;
+        p {
+            border-radius: 70px;
+            height: 70%;
+        }
     }
 }
