@@ -149,10 +149,10 @@ body {
             margin-left: 30px;
         }
     }
-}
-.products:hover {
-    transition: 0.2s ease;
-    transform: scale(1.05);
+    .products:hover {
+        transition: 0.2s ease;
+        transform: scale(1.05);
+    }
 }
 .nav {
     position: fixed;
