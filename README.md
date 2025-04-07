@@ -46,6 +46,12 @@ El propósito de este diseño es servir como referencia para el desarrollo de un
 
 ## Estado
 
-**No funcional** – solo diseño estático sin lógica interactiva ni integración de backend.
+No funcional – solo diseño estático sin lógica interactiva ni integración de backend.
+
+---
+
+## Link de la pagina
+
+onlineclothstore.netlify.app
 
 ---
