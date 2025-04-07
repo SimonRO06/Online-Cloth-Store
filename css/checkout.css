@@ -393,3 +393,33 @@ body {
         }
     }
 }
+@media (min-width: 1500px) {
+    .products {
+        .product-1 {
+            img {
+                grid-column: 1;
+                align-content: center;
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .product-2 {
+            img {
+                grid-column: 1;
+                align-content: center;
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    .card-info {
+        #visa {
+            position: absolute;
+            left: 52%;
+            background-color: white;
+            width: 50px;
+            height: 34px;
+            border-radius: 7px;
+        }
+    }
+}
